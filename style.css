@@ -44,7 +44,7 @@ header {
 }
 
 .design {
-    padding: 90px 0;
+    padding: 50px 0;
 }
 
 .design-text {
@@ -78,7 +78,8 @@ header {
 
 .Recent {
     color: #1F1F1F;
-    font-size: 58px;
+    font-size: 30px;
+    text-align: center;
 }
 
 .line {
@@ -121,7 +122,7 @@ footer {
 }
 
 .footer-text {
-    padding: 100px 0;
+    padding: 64px 0;
 }
 
 .footer-atext {
@@ -155,18 +156,18 @@ footer {
     padding: 50px 0;
 }
 
+@media screen and (max-width:1124px) {
+    .logo-group{
+        width: 100%;
+    }
 
-@media screen and (max-width:1001px) {
+    .img-work{
+        width: 400px;
+    }
+
     .btn {
         display: flex;
 
-    }
-}
-
-@media screen and (max-width:1218px) {
-    .logo-group {
-        display: flex;
-        flex-direction: column;
     }
 
     .cert-group {
@@ -191,7 +192,9 @@ footer {
         padding: 80px 0;
     }
 
-
+    .img-work{
+        width: 300px;
+    }
 
     .design-d {
         margin: 0 auto;
@@ -218,7 +221,7 @@ footer {
 
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:768px) {
     .design-text {
         font-size: 45px;
         text-align: center;
@@ -237,9 +240,16 @@ footer {
         font-size: 30px;
     }
 
+     .logo-group {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    } 
+
     .group-a {
         display: flex;
         flex-direction: column;
+        gap: 12px;
     }
 
     .work-cart {
@@ -252,7 +262,7 @@ footer {
 
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:425px) {
     .footer-text {
         width: 150px;
     }
@@ -272,10 +282,10 @@ footer {
     }
 
     .design-d {
-        font-size: 10px;
+        font-size: 16px;
     }
 
     .desin-p {
-        font-size: 10px;
+        font-size: 16px;
     }
 }

@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,500;1,600;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    font-family: 'Inter';
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.analogue {
+    padding: 30px 0;
+    font-size: 40px;
+}
+
+.navbar {
+    display: flex;
+    gap: 30px;
+    padding: 30px 0;
+}
+
+.a-menu {
+    text-decoration: none;
+    color: #1F1F1F;
+}
+
+.btn {
+    display: none;
+}
+
+.design {
+    padding: 90px 0;
+}
+
+.design-text {
+    font-size: 72px;
+    color: #1F1F1F;
+    max-width: 935px;
+}
+
+.group-text {
+    display: flex;
+    justify-content: flex-end;
+    gap: 41px;
+    padding: 80px 0;
+}
+
+.design-d {
+    font-size: 16px;
+    color: #1F1F1F;
+    max-width: 347px;
+}
+
+.desin-p {
+    font-size: 16px;
+    color: #1F1F1F;
+    max-width: 347px;
+}
+
+.work {
+    padding-bottom: 101px;
+}
+
+.Recent {
+    color: #1F1F1F;
+    font-size: 58px;
+}
+
+.line {
+    border: #1F1F1F solid 0.2px;
+    max-width: 510px;
+    margin-top: 20px;
+}
+
+.work-text {
+    color: #464542;
+    font-size: 23px;
+}
+
+.p-text {
+    color: #6D6B67;
+    font-size: 13px;
+}
+
+.work-cart {
+    padding: 30px;
+}
+
+.logo-group {
+    display: flex;
+}
+
+.work-btn {
+    padding-left: 30px;
+}
+
+.btn2 {
+    color: #fff;
+    background-color: black;
+    padding: 15px 40px;
+}
+
+footer {
+    background: #1F1F1F;
+    padding: 30px;
+}
+
+.footer-text {
+    padding: 100px 0;
+}
+
+.footer-atext {
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-bottom: 52px;
+}
+
+.line1 {
+    border: solid 1px #6D6B67;
+    max-width: 400px;
+}
+
+.footer-a {
+    display: flex;
+    gap: 66px;
+    justify-content: flex-end;
+}
+
+.a-logo {
+    text-decoration: none;
+    color: #fff;
+}
+
+.a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.group-a {
+    padding: 50px 0;
+}
+
+
+@media screen and (max-width:1001px) {
+    .btn {
+        display: flex;
+
+    }
+}
+
+@media screen and (max-width:1218px) {
+    .logo-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cert-group {
+        margin: 0 auto;
+    }
+
+    .work-btn {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:1000px) {
+
+    .navbar {
+        display: none;
+    }
+
+    .group-text {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 80px 0;
+    }
+
+
+
+    .design-d {
+        margin: 0 auto;
+    }
+
+    .desin-p {
+        margin: 0 auto;
+    }
+
+    .btn {
+        color: #1F1F1F;
+        background: none;
+        padding: 15px 20px;
+    }
+
+    .group-btn {
+        padding: 20px 0;
+    }
+
+    .design-text {
+        font-size: 60px;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    .design-text {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .work-text {
+        padding: 20px 0;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .analogue {
+        font-size: 30px;
+    }
+
+    .group-a {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .work-cart {
+        font-size: 2px;
+    }
+
+    .img-work {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .footer-text {
+        width: 150px;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+
+    .analogue {
+        font-size: 25px;
+    }
+
+
+    .design-text {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .design-d {
+        font-size: 10px;
+    }
+
+    .desin-p {
+        font-size: 10px;
+    }
+}

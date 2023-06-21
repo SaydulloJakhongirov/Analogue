@@ -179,6 +179,11 @@ header {
     padding: 15px 40px;
 }
 
+.img-work:hover{
+    padding-top: 30px;
+    transition: 1s;
+}
+
 footer {
     background: #1F1F1F;
     padding: 30px;

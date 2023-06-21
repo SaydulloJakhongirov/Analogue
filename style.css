@@ -16,22 +16,26 @@ body {
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
+    font-weight: 100;
 }
 
-header {
+.header-container {
     display: flex;
     justify-content: space-between;
 }
 
+header {
+    padding: 40px 0;
+}
+
 .analogue {
-    padding: 30px 0;
     font-size: 40px;
 }
 
 .navbar {
     display: flex;
-    gap: 30px;
-    padding: 30px 0;
+    gap: 26px;
+    padding: 12px;
 }
 
 .a-menu {
@@ -54,22 +58,59 @@ header {
 }
 
 .group-text {
-    display: flex;
-    justify-content: flex-end;
-    gap: 41px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-start: 2;
+    gap: 40px;
     padding: 80px 0;
+    font-size: 16px;
+    color: #1F1F1F;
 }
 
 .design-d {
-    font-size: 16px;
-    color: #1F1F1F;
-    max-width: 347px;
+    display: grid;
+    grid-column-start: 2;
 }
 
-.desin-p {
-    font-size: 16px;
+.client-text {
+    font-size: 32px;
     color: #1F1F1F;
-    max-width: 347px;
+    text-align: center;
+    padding: 79px 0;
+}
+
+.icon-clients {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-row-gap: 70px;
+    padding: 41px 0;
+    padding-left: 116px;
+}
+
+.div-line {
+    padding: 56px;
+}
+
+.div-start {
+    position: relative;
+    top: 56px;
+}
+
+.clients-line {
+    border: solid 1px #6D6B67;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.client-line {
+    border: solid 1px #6D6B67;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.clients {
+    background-color: #F7F6F3;
+    width: 100%;
 }
 
 .work {
@@ -79,7 +120,23 @@ header {
 .Recent {
     color: #1F1F1F;
     font-size: 30px;
-    text-align: center;
+    padding-left: 30px;
+}
+
+.btn2:hover {
+    background-color: #fff;
+    color: black;
+    transition: 1s;
+}
+
+.start {
+    background: #E0F391;
+}
+
+.start-line {
+    border: solid 1px #6D6B67;
+    max-width: 1120px;
+    margin: 0 auto;
 }
 
 .line {
@@ -91,11 +148,13 @@ header {
 .work-text {
     color: #464542;
     font-size: 23px;
+    padding: 10px 0;
 }
 
 .p-text {
     color: #6D6B67;
     font-size: 13px;
+    padding: 10px 0;
 }
 
 .work-cart {
@@ -103,7 +162,8 @@ header {
 }
 
 .logo-group {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
 
 .work-btn {
@@ -152,16 +212,30 @@ footer {
     color: #fff;
 }
 
+.start-text {
+    padding-top: 106px;
+    color: #1F1F1F;
+    font-size: 28px;
+    padding-left: 110px;
+}
+
+.start-btn {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 41px;
+    padding-right: 40px;
+}
+
 .group-a {
     padding: 50px 0;
 }
 
 @media screen and (max-width:1124px) {
-    .logo-group{
+    .logo-group {
         width: 100%;
     }
 
-    .img-work{
+    .img-work {
         width: 400px;
     }
 
@@ -177,12 +251,26 @@ footer {
     .work-btn {
         text-align: center;
     }
+
+    .btn2 {
+        margin: 0 auto;
+    }
 }
 
 @media screen and (max-width:1000px) {
 
     .navbar {
         display: none;
+    }
+
+    .icon-clients {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .start-text {
+        text-align: center;
+        margin-left: -150px;
     }
 
     .group-text {
@@ -192,7 +280,7 @@ footer {
         padding: 80px 0;
     }
 
-    .img-work{
+    .img-work {
         width: 300px;
     }
 
@@ -210,8 +298,10 @@ footer {
         padding: 15px 20px;
     }
 
-    .group-btn {
-        padding: 20px 0;
+    .btn:hover {
+        background-color: #1F1F1F;
+        color: #fff;
+        border: none;
     }
 
     .design-text {
@@ -236,15 +326,24 @@ footer {
         grid-template-columns: auto;
     }
 
+    .icon-clients {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
     .analogue {
         font-size: 30px;
     }
 
-     .logo-group {
+    .logo-group {
         display: flex;
         flex-direction: column;
         text-align: center;
-    } 
+    }
+
+    .Recent {
+        text-align: center;
+    }
 
     .group-a {
         display: flex;
@@ -260,6 +359,13 @@ footer {
         width: 100%;
     }
 
+}
+
+@media screen and (max-width:525px) {
+    .icon-clients {
+        display: grid;
+        grid-template-columns: auto;
+    }
 }
 
 @media screen and (max-width:425px) {

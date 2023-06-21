@@ -43,12 +43,12 @@ header {
     color: #1F1F1F;
 }
 
-.btn {
-    display: none;
+.group-btn {
+    display:none;
 }
 
 .design {
-    padding: 50px 0;
+    padding: 50px 20px;
 }
 
 .design-text {
@@ -72,6 +72,10 @@ header {
     grid-column-start: 2;
 }
 
+.icon-start{
+    margin: 0 auto;
+}
+
 .client-text {
     font-size: 32px;
     color: #1F1F1F;
@@ -84,7 +88,6 @@ header {
     grid-template-columns: auto auto auto auto;
     grid-row-gap: 70px;
     padding: 41px 0;
-    padding-left: 116px;
 }
 
 .div-line {
@@ -217,6 +220,7 @@ footer {
     color: #1F1F1F;
     font-size: 28px;
     padding-left: 110px;
+    margin-bottom: 30px;
 }
 
 .start-btn {
@@ -236,13 +240,9 @@ footer {
     }
 
     .img-work {
-        width: 400px;
+        width: 100%;
     }
 
-    .btn {
-        display: flex;
-
-    }
 
     .cert-group {
         margin: 0 auto;
@@ -308,6 +308,11 @@ footer {
         font-size: 60px;
         text-align: center;
     }
+    
+    .group-btn {
+        display: flex;
+
+    }
 
 }
 
@@ -357,6 +362,9 @@ footer {
 
     .img-work {
         width: 100%;
+    }
+    .start-text {
+        margin-bottom: 20px;
     }
 
 }

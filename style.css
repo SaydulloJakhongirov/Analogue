@@ -167,7 +167,7 @@ header {
 }
 
 .work-cart {
-    padding: 30px;
+    padding: 9px;
 }
 
 .logo-group {
@@ -470,6 +470,10 @@ footer {
 
     .analogue {
         font-size: 25px;
+    }
+
+    .icon-start {
+        width: 90px;
     }
 
     .design-text {

@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-    max-width: 1160px;
+    max-width: 1290px;
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -25,7 +25,7 @@ body {
 }
 
 header {
-    padding: 40px 0;
+    padding: 27px 25px;
 }
 
 .analogue {
@@ -35,7 +35,6 @@ header {
 .navbar {
     display: flex;
     gap: 26px;
-    padding: 12px;
 }
 
 .a-menu {
@@ -44,11 +43,12 @@ header {
 }
 
 .group-btn {
-    display:none;
+    margin-top: -8px;
+    display: none;
 }
 
 .design {
-    padding: 50px 20px;
+    padding: 37px 20px;
 }
 
 .design-text {
@@ -62,7 +62,7 @@ header {
     grid-template-columns: repeat(3, 1fr);
     grid-column-start: 2;
     gap: 40px;
-    padding: 80px 0;
+    padding: 58px 0;
     font-size: 16px;
     color: #1F1F1F;
 }
@@ -72,7 +72,7 @@ header {
     grid-column-start: 2;
 }
 
-.icon-start{
+.icon-start {
     margin: 0 auto;
 }
 
@@ -91,7 +91,7 @@ header {
 }
 
 .div-line {
-    padding: 56px;
+    padding: 30px;
 }
 
 .div-start {
@@ -101,23 +101,19 @@ header {
 
 .clients-line {
     border: solid 1px #6D6B67;
-    max-width: 1120px;
+    max-width: 1320px;
     margin: 0 auto;
 }
 
 .client-line {
     border: solid 1px #6D6B67;
-    max-width: 1120px;
+    max-width: 1320px;
     margin: 0 auto;
 }
 
 .clients {
     background-color: #F7F6F3;
     width: 100%;
-}
-
-.work {
-    padding-bottom: 101px;
 }
 
 .Recent {
@@ -129,16 +125,22 @@ header {
 .btn2:hover {
     background-color: #fff;
     color: black;
-    transition: 1s;
+    transition: 0.5s;
+}
+
+.btn3:hover {
+    background-color: #fff;
+    color: black;
+    transition: 0.5s;
 }
 
 .start {
     background: #E0F391;
+    padding: 20px 40px;
 }
 
 .start-line {
     border: solid 1px #6D6B67;
-    max-width: 1120px;
     margin: 0 auto;
 }
 
@@ -154,10 +156,14 @@ header {
     padding: 10px 0;
 }
 
+.work {
+    padding: 80px;
+}
+
 .p-text {
     color: #6D6B67;
     font-size: 13px;
-    padding: 10px 0;
+    padding: 1px 0;
 }
 
 .work-cart {
@@ -167,6 +173,7 @@ header {
 .logo-group {
     display: grid;
     grid-template-columns: auto auto auto;
+    gap: 20px;
 }
 
 .work-btn {
@@ -179,18 +186,13 @@ header {
     padding: 15px 40px;
 }
 
-.img-work:hover{
-    padding-top: 30px;
-    transition: 1s;
-}
-
 footer {
     background: #1F1F1F;
     padding: 30px;
 }
 
 .footer-text {
-    padding: 64px 0;
+    padding: 50px 0;
 }
 
 .footer-atext {
@@ -215,6 +217,12 @@ footer {
     color: #fff;
 }
 
+.btn3 {
+    color: #fff;
+    background-color: black;
+    padding: 15px 40px;
+}
+
 .a {
     text-decoration: none;
     color: #fff;
@@ -224,15 +232,12 @@ footer {
     padding-top: 106px;
     color: #1F1F1F;
     font-size: 28px;
-    padding-left: 110px;
-    margin-bottom: 30px;
 }
 
 .start-btn {
     display: flex;
     justify-content: flex-end;
-    padding-bottom: 41px;
-    padding-right: 40px;
+    margin-top: -35px;
 }
 
 .group-a {
@@ -240,17 +245,19 @@ footer {
 }
 
 @media screen and (max-width:1124px) {
-    .logo-group {
-        width: 100%;
-    }
-
-    .img-work {
-        width: 100%;
-    }
-
 
     .cert-group {
         margin: 0 auto;
+    }
+
+    .logo-group {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+    }
+
+    .img-work {
+        width: 370px;
     }
 
     .work-btn {
@@ -270,23 +277,25 @@ footer {
 
     .icon-clients {
         display: grid;
-        grid-template-columns: auto auto auto;
-    }
-
-    .start-text {
-        text-align: center;
-        margin-left: -150px;
+        grid-template-columns: auto auto auto auto;
     }
 
     .group-text {
         display: flex;
         flex-direction: column;
         text-align: center;
-        padding: 80px 0;
+        padding: 37px;
+    }
+
+    .logo-group {
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
     }
 
     .img-work {
-        width: 300px;
+        width: 100%;
     }
 
     .design-d {
@@ -306,19 +315,43 @@ footer {
     .btn:hover {
         background-color: #1F1F1F;
         color: #fff;
-        border: none;
     }
 
     .design-text {
         font-size: 60px;
         text-align: center;
     }
-    
+
     .group-btn {
         display: flex;
 
     }
 
+}
+
+@media screen and (max-width:880px) {
+    .logo-group {
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .start-btn {
+        padding: 40px;
+    }
+
+    .start-text {
+        text-align: center;
+    }
+
+    .btn3 {
+        margin: 0 auto;
+    }
+
+    .img-work {
+        width: 300px;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -327,8 +360,19 @@ footer {
         text-align: center;
     }
 
+    .logo-group {
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-work {
+        width: 220px;
+    }
+
     .work-text {
-        padding: 20px 0;
+        padding: 12px 0;
     }
 
     footer {
@@ -338,17 +382,15 @@ footer {
 
     .icon-clients {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto;
+    }
+
+    .icon-start {
+        width: 110px;
     }
 
     .analogue {
         font-size: 30px;
-    }
-
-    .logo-group {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
     }
 
     .Recent {
@@ -365,19 +407,39 @@ footer {
         font-size: 2px;
     }
 
-    .img-work {
-        width: 100%;
-    }
     .start-text {
         margin-bottom: 20px;
     }
 
 }
 
+@media screen and (max-width:597px) {
+    .logo-group {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .img-work {
+        width: 430px;
+    }
+}
+
 @media screen and (max-width:525px) {
     .icon-clients {
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: auto auto;
+    }
+
+    .img-work {
+        width: 340px;
+    }
+
+    .design-d {
+        font-size: 14px;
+    }
+
+    .desin-d {
+        font-size: 14px;
     }
 }
 
@@ -386,14 +448,30 @@ footer {
         width: 150px;
     }
 
+    .footer-atext {
+        font-size: 15px;
+    }
+
+    .btn2 {
+        padding: 15px 20px;
+    }
+
+    .img-work {
+        width: 243px;
+    }
+
+    .btn2 {
+        margin: 0 auto;
+    }
+
+
     footer {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .analogue {
         font-size: 25px;
     }
-
 
     .design-text {
         font-size: 30px;
@@ -401,10 +479,10 @@ footer {
     }
 
     .design-d {
-        font-size: 16px;
+        font-size: 11px;
     }
 
-    .desin-p {
-        font-size: 16px;
+    .desin-d {
+        font-size: 11px;
     }
 }
